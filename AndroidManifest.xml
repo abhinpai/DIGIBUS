@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.digibus"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".UserDash"
+            android:label="@string/title_activity_user_dash" >
+        </activity>
+        <activity
+            android:name=".AdminLogin"
+            android:label="@string/title_activity_admin_login"
+            android:noHistory="true" >
+        </activity>
+        <activity
+            android:name=".AdminDash"
+            android:label="@string/title_activity_admin_dash"
+            android:parentActivityName=".UserDash" >
+                                   
+        </activity>
+        <activity
+            android:name=".ManageBusDetails"
+            android:label="@string/title_activity_manage_bus" 
+            android:parentActivityName=".AdminDash">
+        </activity>
+        <activity
+            android:name=".ManageEmployee"
+            android:label="@string/title_activity_manage_employee"
+            android:parentActivityName=".AdminDash" >
+        </activity>
+        <activity
+            android:name=".Feedbacks"
+            android:label="@string/title_activity_feedbacks" >
+        </activity>
+        <activity
+            android:name=".ManageBus"
+            android:label="@string/title_activity_manage_bus" 
+            android:parentActivityName=".ManageBusDetails">
+        </activity>
+        <activity
+            android:name=".ManageLocation"
+            android:label="@string/title_activity_manage_location" 
+            android:parentActivityName=".ManageBusDetails">
+        </activity>
+        <activity
+            android:name=".AddLoaction"
+            android:label="@string/title_activity_add_loaction" 
+            android:parentActivityName=".ManageLocation">
+        </activity>
+        <activity
+            android:name=".ManageLocationDetails"
+            android:label="@string/title_activity_manage_location_details" 
+            android:parentActivityName=".ManageBusDetails">
+        </activity>
+        <activity
+            android:name=".AddLocationDetail"
+            android:label="@string/title_activity_add_locationdetail" 
+            android:parentActivityName=".ManageLocationDetails">
+        </activity>
+        <activity
+            android:name=".AddBus"
+            android:label="@string/title_activity_add_bus" 
+            android:parentActivityName=".ManageBus">
+        </activity>
+        <activity
+            android:name=".ManageStop"
+            android:label="@string/title_activity_manage_stop" 
+            android:parentActivityName=".ManageBusDetails">
+        </activity>
+        <activity
+            android:name=".AddTime"
+            android:label="@string/title_activity_add_time"
+            android:parentActivityName=".ManageStop"  >
+        </activity>
+        <activity
+            android:name=".BusSearch"
+            android:label="@string/title_activity_bus_search" 
+            android:parentActivityName=".UserDash" >
+        </activity>
+        <activity
+            android:name=".BusDetails"
+            android:label="@string/title_activity_bus_details" >
+        </activity>
+        <activity
+            android:name=".AddFeedback"
+            android:label="@string/title_activity_add_feedback"
+            android:parentActivityName=".UserDash"  >
+        </activity>
+        <activity
+            android:name=".Location"
+            android:label="Locations" >
+        </activity>
+        <activity
+            android:name=".UpdateLocation"
+            android:label="@string/title_activity_update_location"
+            android:parentActivityName=".ManageLocation" >
+        </activity>
+        <activity
+            android:name=".BusDetail"
+            android:label="@string/title_activity_bus_detail" >
+        </activity>
+        <activity
+            android:name=".UpdateBus"
+            android:label="@string/title_activity_update_bus"
+             android:parentActivityName=".ManageBus"  >
+        </activity>
+        <activity
+            android:name=".UserLogin"
+            android:label="@string/title_activity_user_login" 
+            android:noHistory="true">
+        </activity>
+        
+        
+        <activity
+            android:name=".Register"
+            android:label="@string/title_activity_register" 
+            android:parentActivityName=".UserLogin" >
+        </activity>
+        <activity
+            android:name=".BookBus"
+            android:label="@string/title_activity_book_bus" 
+            android:parentActivityName=".BookingOption">
+        </activity>
+        <activity
+            android:name=".AddEmployee"
+            android:label="@string/title_activity_add_employee"
+             android:parentActivityName=".ManageEmployee">
+        </activity>
+        <activity
+            android:name=".Employee"
+            android:label="@string/title_activity_employee" >
+        </activity>
+        <activity
+            android:name=".UpdateEmployee"
+            android:label="@string/title_activity_update_employee"
+            android:parentActivityName=".ManageEmployee" >
+        </activity>
+        <activity
+            android:name=".BookingOption"
+            android:label="@string/title_activity_booking_option" 
+            android:parentActivityName=".UserDash"  >
+ 
+        </activity>
+        <activity
+            android:name=".AdvanceBooking"
+            android:label="@string/title_activity_advance_booking" 
+            android:parentActivityName=".BookingOption">
+        </activity>
+        <activity
+            android:name=".BookTicket"
+            android:label="@string/title_activity_book_ticket" 
+            android:parentActivityName=".AdvanceBooking">
+        </activity>
+        <activity
+            android:name=".CancelTicket"
+            android:label="@string/title_activity_cancel_ticket"
+            android:parentActivityName=".AdvanceBooking" >
+        </activity>
+        <activity
+            android:name=".ViewTicket"
+            android:label="@string/title_activity_view_ticket"
+            android:parentActivityName=".AdvanceBooking" >
+        </activity>
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/title_activity_splash_screen" >
+          <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>  
+
+        </activity>
+        <activity
+            android:name=".NetworkError"
+            android:label="@string/title_activity_network_error" >
+        </activity>
+        <activity
+            android:name=".ContactDetails"
+            android:label="@string/title_activity_contact_details" >
+        </activity>
+                <activity
+            android:name=".ContactActivity"
+            android:label="@string/title_activity_contact" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".Bookings"
+            android:label="@string/title_activity_bookings" >
+        </activity>
+        
+    </application>
+
+</manifest>

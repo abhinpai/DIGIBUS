@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/post_border_style"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+         android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+	<ImageView
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    android:layout_gravity="center"
+	    android:layout_marginTop="25dp"
+	    android:src="@drawable/header" />
+	
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            
+            android:layout_margin="20dp" >
+
+            <ImageView
+                android:id="@+id/route_button"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btn_route" />
+
+            <ImageView
+                android:id="@+id/bus_booking_button"
+                android:layout_width="145dp"
+               
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/btn_book" />
+
+            <ImageView
+                android:id="@+id/feedback_button"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/contact_button"
+                android:src="@drawable/btn_feedback" />
+
+            <ImageView
+                android:id="@+id/contact_button"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_contact" />
+
+            <ImageView
+                android:id="@+id/admin_login_button"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/btn_login" />
+
+            <ImageView
+                android:id="@+id/about_us_button"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/btn_about" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

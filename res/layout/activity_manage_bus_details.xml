@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_primary"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_managelocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:background="#007d7a"
+            android:text="Manage Location"
+            android:textColor="@color/tabsScrollColor"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_managebus"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#007d7a"
+            android:text="Manage Bus details"
+            android:textColor="@color/tabsScrollColor"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_managelocationdetails"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#007d7a"
+            android:text="Manage Source destination"
+            android:textColor="@color/tabsScrollColor"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btn_managestop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#007d7a"
+            android:text="Manage Timings"
+            android:textColor="@color/tabsScrollColor"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
